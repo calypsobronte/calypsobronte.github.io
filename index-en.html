@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ==================== SEO ==================== -->
+    <!-- SEO -->
     <title>Lina María Montaño Ramírez | Backend Developer &amp; Google WTM Ambassador</title>
-    <meta name="description" content="Backend Developer con experiencia en Go, Python, Node.js y Cloud. Embajadora de Women Techmakers de Google, mentora y creadora de contenido en CaminoDev y RyukPlay.">
-    <meta name="keywords" content="Backend Developer, Go, Python, Node.js, AWS, MercadoLibre, Women Techmakers, Lina Montaño, Desarrolladora Backend, Colombia">
+    <meta name="description" content="Backend Developer with experience in Go, Python, Node.js and Cloud. Google Women Techmakers Ambassador, mentor and content creator at CaminoDev and RyukPlay.">
+    <meta name="keywords" content="Backend Developer, Go, Python, Node.js, AWS, MercadoLibre, Women Techmakers, Lina Montaño, Software Developer, Colombia">
     <meta name="author" content="Lina María Montaño Ramírez">
     <link rel="canonical" href="https://calypsobronte.github.io">
 
-    <!-- ==================== FAVICONS (dentro de images/) ==================== -->
+    <!-- FAVICONS -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="manifest" href="images/site.webmanifest">
 
-    <!-- ==================== OPEN GRAPH ==================== -->
+    <!-- OPEN GRAPH -->
     <meta property="og:title" content="Lina María Montaño Ramírez | Backend Developer">
-    <meta property="og:description" content="Backend Developer especializada en Go, Python y Cloud. Embajadora de Women Techmakers de Google.">
+    <meta property="og:description" content="Backend Developer specialized in Go, Python and Cloud. Google Women Techmakers Ambassador.">
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:url" content="https://calypsobronte.github.io">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Lina María Montaño Ramírez">
 
-    <!-- ==================== TWITTER CARDS ==================== -->
+    <!-- TWITTER CARDS -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lina María Montaño Ramírez | Backend Developer">
-    <meta name="twitter:description" content="Backend Developer | Google WTM Ambassador | Creadora de contenido">
+    <meta name="twitter:description" content="Backend Developer | Google WTM Ambassador | Content Creator">
     <meta name="twitter:image" content="images/preview.jpg">
 
-    <!-- ==================== ESTILOS ==================== -->
+    <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        .hero-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
-        }
-        .section-title {
-            position: relative;
-        }
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+        .section-title { position: relative; }
         .section-title::after {
             content: '';
             position: absolute;
@@ -59,24 +53,15 @@
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
-        .live-badge {
-            animation: pulse 2s infinite;
-        }
+        .live-badge { animation: pulse 2s infinite; }
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.7; }
         }
-        .mobile-menu {
-            animation: slideDown 0.3s ease forwards;
-        }
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-200">
-    <!-- Navbar -->
+
     <!-- Navbar -->
     <nav class="fixed top-0 w-full bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -87,39 +72,38 @@
                 <span class="font-semibold text-xl whitespace-nowrap">Lina Montaño</span>
             </div>
 
-            <!-- Desktop Menu (solo se ve en pantallas grandes) -->
+            <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-                <a href="#experiencia" class="hover:text-emerald-400 transition-colors">Experiencia</a>
-                <a href="#habilidades" class="hover:text-emerald-400 transition-colors">Habilidades</a>
-                <a href="#contenido" class="hover:text-emerald-400 transition-colors">Contenido</a>
-                <a href="#sobre-mi" class="hover:text-emerald-400 transition-colors">Sobre mí</a>
+                <a href="#experience" class="hover:text-emerald-400 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-emerald-400 transition-colors">Skills</a>
+                <a href="#content" class="hover:text-emerald-400 transition-colors">Content</a>
+                <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
                 
-                <!-- Idioma Desktop -->
-                    <div class="flex items-center bg-zinc-800 rounded-full p-1 text-xs font-medium">
-                        <button onclick="switchLanguage('es')" class="px-3 py-1 rounded-full bg-emerald-500 text-white">ES</button>
-                        <button onclick="switchLanguage('en')" class="px-3 py-1 rounded-full text-zinc-400 hover:text-white">EN</button>
-                        
-                    </div>
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-zinc-800 rounded-full p-1 text-xs font-medium">
+                    <button onclick="switchLanguage('es')" class="px-3 py-1 rounded-full text-zinc-400 hover:text-white">ES</button>
+                    <button onclick="switchLanguage('en')" class="px-3 py-1 rounded-full bg-emerald-500 text-white">EN</button>
+                </div>
 
-                <a href="#contacto" class="flex items-center gap-2 px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 transition-colors rounded-full text-sm font-semibold text-white">
+                <a href="#contact" class="flex items-center gap-2 px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 transition-colors rounded-full text-sm font-semibold text-white">
                     <i class="fas fa-paper-plane"></i>
-                    Contactar
+                    Contact
                 </a>
             </div>
 
-            <!-- Mobile: Idioma + Hamburguesa -->
+            <!-- Mobile: Language + Hamburger -->
             <div class="flex items-center gap-3 lg:hidden">
                 
-                <!-- Idioma en móvil (más pequeño) -->
+                <!-- Language Switcher Mobile -->
                 <div class="flex items-center bg-zinc-800 rounded-full p-0.5 text-xs font-medium">
-                        <button onclick="switchLanguage('es')" class="px-3 py-1 rounded-full bg-emerald-500 text-white">ES</button>
-                        <button onclick="switchLanguage('en')" class="px-3 py-1 rounded-full text-zinc-400 hover:text-white">EN</button>  
-                    </div>
+                    <button onclick="switchLanguage('es')" class="px-3 py-1 rounded-full text-zinc-400 hover:text-white">ES</button>
+                    <button onclick="switchLanguage('en')" class="px-3 py-1 rounded-full bg-emerald-500 text-white">EN</button>
+                </div>
 
-                <!-- Botón Hamburguesa (SOLO aparece en móvil) -->
+                <!-- Hamburger Button -->
                 <button id="hamburger-btn" 
                         class="text-2xl text-zinc-300 hover:text-white p-2"
-                        aria-label="Abrir menú">
+                        aria-label="Open menu">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -128,15 +112,15 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-zinc-900 border-t border-zinc-800">
             <div class="px-6 py-6 flex flex-col gap-4 text-sm font-medium">
-                <a href="#experiencia" class="mobile-link py-2 hover:text-emerald-400">Experiencia</a>
-                <a href="#habilidades" class="mobile-link py-2 hover:text-emerald-400">Habilidades</a>
-                <a href="#contenido" class="mobile-link py-2 hover:text-emerald-400">Contenido</a>
-                <a href="#sobre-mi" class="mobile-link py-2 hover:text-emerald-400">Sobre mí</a>
+                <a href="#experience" class="mobile-link py-2 hover:text-emerald-400">Experience</a>
+                <a href="#skills" class="mobile-link py-2 hover:text-emerald-400">Skills</a>
+                <a href="#content" class="mobile-link py-2 hover:text-emerald-400">Content</a>
+                <a href="#about" class="mobile-link py-2 hover:text-emerald-400">About</a>
                 
                 <div class="pt-4 border-t border-zinc-700">
-                    <a href="#contacto" class="flex items-center justify-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-full text-white font-semibold">
+                    <a href="#contact" class="flex items-center justify-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-full text-white font-semibold">
                         <i class="fas fa-paper-plane"></i>
-                        Contactar
+                        Contact
                     </a>
                 </div>
             </div>
@@ -149,7 +133,7 @@
             <div class="space-y-6">
                 <div class="inline-flex items-center gap-2 bg-zinc-900 px-4 py-2 rounded-full text-sm">
                     <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-                    Disponible para nuevas oportunidades
+                    Open to new opportunities
                 </div>
                 
                 <h1 class="text-6xl md:text-7xl font-bold leading-tight">
@@ -158,20 +142,19 @@
                 </h1>
                 
                 <p class="text-2xl text-zinc-400">
-                    Backend Developer &amp; Ambassador Women Techmakers de Google
+                    Backend Developer &amp; Google Women Techmakers Ambassador
                 </p>
                 
                 <p class="text-zinc-400 max-w-md">
-                    Apasionada por construir sistemas escalables y por crear contenido en tech y gaming.
+                    Passionate about building scalable systems and creating content in tech and gaming.
                 </p>
 
                 <div class="flex flex-wrap gap-4">
-                    <a href="#experiencia" class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-2xl hover:bg-zinc-200 transition-all">Ver trayectoria</a>
-                    <a href="cv/Lina_Montano_CV.pdf" 
-                       download="Lina_Montano_CV.pdf"
+                    <a href="#experience" class="px-8 py-4 bg-white text-zinc-900 font-semibold rounded-2xl hover:bg-zinc-200 transition-all">View Experience</a>
+                    <a href="cv/Lina_Montano_CV_en.pdf" download="Lina_Montano_CV_en.pdf"
                        class="px-8 py-4 border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-zinc-900 font-semibold rounded-2xl transition-all flex items-center gap-2">
                         <i class="fas fa-download"></i>
-                        Descargar CV
+                        Download CV
                     </a>
                 </div>
 
@@ -183,17 +166,16 @@
             </div>
             
             <div class="flex justify-center">
-                <img src="images/lina_montano.jpg" 
-                     alt="Lina María Montaño Ramírez - RyukPlay" 
+                <img src="images/lina_montano.jpg" alt="Lina María Montaño Ramírez" 
                      class="w-80 md:w-96 rounded-3xl shadow-2xl border border-emerald-900">
             </div>
         </div>
     </section>
 
-    <!-- Experiencia -->
-    <section id="experiencia" class="py-24 bg-zinc-900">
+    <!-- Experience -->
+    <section id="experience" class="py-24 bg-zinc-900">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="section-title text-4xl font-bold mb-12">Experiencia Profesional</h2>
+            <h2 class="section-title text-4xl font-bold mb-12">Professional Experience</h2>
             
             <div class="space-y-16">
 
@@ -201,19 +183,19 @@
                 <div class="grid md:grid-cols-12 gap-8">
                     <div class="md:col-span-4">
                         <div class="sticky top-24">
-                            <div class="text-emerald-400 font-mono text-sm">2024 - Actual</div>
+                            <div class="text-emerald-400 font-mono text-sm">2024 - Present</div>
                             <h3 class="text-2xl font-semibold mt-2">Backend Developer (Go/Python/Cloud)</h3>
-                            <p class="text-emerald-400">MercadoLibre • 1 año 11 meses</p>
+                            <p class="text-emerald-400">MercadoLibre • 1 year 11 months</p>
                         </div>
                     </div>
                     <div class="md:col-span-8">
                         <ul class="space-y-3 text-zinc-300">
-                            <li class="flex gap-3">• Diseño, refactorización e implementación de APIs REST de alta disponibilidad con Fury.</li>
-                            <li class="flex gap-3">• Modelado de datos y bases de datos relacionales (SQL).</li>
-                            <li class="flex gap-3">• Proyecto Pumba: Sistema de análisis de seguridad de URLs con VirusTotal.</li>
-                            <li class="flex gap-3">• Proyecto Timon Rules: Motor de reglas para control de accesos (Allowlist).</li>
-                            <li class="flex gap-3">• Liderazgo en WhiteClean (AWS): Revalidación y depuración de allowlists.</li>
-                            <li class="flex gap-3">• Auditoría y mitigación de vulnerabilidades de ciberseguridad.</li>
+                            <li class="flex gap-3">• Design, refactoring and implementation of high-availability REST APIs using Fury framework.</li>
+                            <li class="flex gap-3">• Data modeling and relational database design (SQL).</li>
+                            <li class="flex gap-3">• Pumba Project: URL security analysis system integrated with VirusTotal.</li>
+                            <li class="flex gap-3">• Timon Rules Project: Rules engine for access control using allowlists.</li>
+                            <li class="flex gap-3">• Led WhiteClean Project (AWS): Revalidation and cleanup of inactive allowlists.</li>
+                            <li class="flex gap-3">• Security risk mitigation and vulnerability auditing across company projects.</li>
                         </ul>
                     </div>
                 </div>
@@ -221,22 +203,18 @@
                 <!-- Sinapsis -->
                 <div class="grid md:grid-cols-12 gap-8">
                     <div class="md:col-span-4">
-                        <div class="sticky top-24 max-w-full">
+                        <div class="sticky top-24">
                             <div class="text-emerald-400 font-mono text-sm">2022 - 2024</div>
-                            
-                            <h3 class="text-lg md:text-2xl font-semibold mt-2 leading-snug break-words hyphens-auto">
-                                Backend Developer (Node.js/Azure/TypeScript/AWS)
-                            </h3>
-                            
-                            <p class="text-emerald-400">Sinapsis • 1 año 6 meses</p>
+                            <h3 class="text-lg md:text-2xl font-semibold mt-2 leading-snug break-words hyphens-auto">Backend Developer (Node.js/Azure/TypeScript/AWS)</h3>
+                            <p class="text-emerald-400">Sinapsis • 1 year 6 months</p>
                         </div>
                     </div>
                     <div class="md:col-span-8">
                         <ul class="space-y-3 text-zinc-300">
-                            <li class="flex gap-3">• Desarrollo y refactorización de APIs REST.</li>
-                            <li class="flex gap-3">• Modelado de datos y creación de bases de datos en AWS RDS.</li>
-                            <li class="flex gap-3">• Infraestructura como código (AWS y Azure).</li>
-                            <li class="flex gap-3">• Proyectos: Denuncias Paraguay, Congreso de Chile, Aresep (Blockchain), Pavimentado (Python + ML), SafeCities, entre otros.</li>
+                            <li class="flex gap-3">• Development and refactoring of REST APIs.</li>
+                            <li class="flex gap-3">• Data modeling and database creation on AWS RDS.</li>
+                            <li class="flex gap-3">• Infrastructure as Code using AWS and Azure.</li>
+                            <li class="flex gap-3">• Projects: Denuncias Paraguay, Congreso de Chile, Aresep (Blockchain), Pavimentado (Python + ML), SafeCities, among others.</li>
                         </ul>
                     </div>
                 </div>
@@ -247,16 +225,15 @@
                         <div class="sticky top-24">
                             <div class="text-emerald-400 font-mono text-sm">2021 - 2022</div>
                             <h3 class="text-2xl font-semibold mt-2">Fullstack Developer (Vue.js/Node.js/AWS)</h3>
-                            <p class="text-emerald-400">PLM Group • 1 año 5 meses</p>
+                            <p class="text-emerald-400">PLM Group • 1 year 5 months</p>
                         </div>
                     </div>
                     <div class="md:col-span-8">
                         <ul class="space-y-3 text-zinc-300">
-                            <li class="flex gap-3">• Apoyo al coordinador en diseño y codificación del software.</li>
-                            <li class="flex gap-3">• Participación en reuniones de desarrollo y mejora continua del código base.</li>
-                            <li class="flex gap-3">• Corrección de errores y seguimiento del rendimiento técnico.</li>
-                            <li class="flex gap-3">• Recolección de feedback de usuarios y redacción de informes.</li>
-                            <li class="flex gap-3">• Proyectos: Aeropuerto El Dorado, Aeropuerto de Lima, Casa Magna, Pintuco, Haceb, entre otros.</li>
+                            <li class="flex gap-3">• Supported the development coordinator in software design and coding.</li>
+                            <li class="flex gap-3">• Participated in development meetings and continuous improvement of the codebase.</li>
+                            <li class="flex gap-3">• Bug fixing and technical performance monitoring.</li>
+                            <li class="flex gap-3">• Projects: Aeropuerto El Dorado, Aeropuerto de Lima, Casa Magna, Pintuco, Haceb, among others.</li>
                         </ul>
                     </div>
                 </div>
@@ -267,14 +244,14 @@
                         <div class="sticky top-24">
                             <div class="text-emerald-400 font-mono text-sm">2020 - 2021</div>
                             <h3 class="text-2xl font-semibold mt-2">Backend Developer (Node.js/React.js/Python)</h3>
-                            <p class="text-emerald-400">Ozel Producciones • 1 año</p>
+                            <p class="text-emerald-400">Ozel Producciones • 1 year</p>
                         </div>
                     </div>
                     <div class="md:col-span-8">
                         <ul class="space-y-3 text-zinc-300">
-                            <li class="flex gap-3">• Creación de plataforma de transmisión en streaming con centro de control.</li>
-                            <li class="flex gap-3">• Desarrollo de aplicación con ReactJS, MongoDB, Flask y Node.js (chat y trivialidades).</li>
-                            <li class="flex gap-3">• Proyectos: FIMPU Platform, Noel Christmas App, Reebok, Colgate, entre otros.</li>
+                            <li class="flex gap-3">• Created a streaming transmission platform with control center.</li>
+                            <li class="flex gap-3">• Developed application using ReactJS, MongoDB, Flask and Node.js (chat and trivia features).</li>
+                            <li class="flex gap-3">• Projects: FIMPU Platform, Noel Christmas App, Reebok, Colgate, among others.</li>
                         </ul>
                     </div>
                 </div>
@@ -282,10 +259,10 @@
         </div>
     </section>
 
-    <!-- Habilidades -->
-    <section id="habilidades" class="py-24">
+    <!-- Skills -->
+    <section id="skills" class="py-24">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="section-title text-4xl font-bold mb-12">Habilidades y Tecnologías</h2>
+            <h2 class="section-title text-4xl font-bold mb-12">Skills &amp; Technologies</h2>
             
             <!-- Primera fila: 3 tarjetas -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -304,11 +281,11 @@
                     </div>
                 </div>
 
-                <!-- Bases de Datos -->
+                <!-- Databases -->
                 <div class="bg-zinc-900 p-8 rounded-3xl">
                     <h3 class="text-xl font-semibold mb-6 flex items-center gap-3">
                         <i class="fas fa-database text-emerald-400"></i>
-                        Bases de Datos
+                        Databases
                     </h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-4 py-2 bg-zinc-800 rounded-full text-sm">PostgreSQL</span>
@@ -354,115 +331,97 @@
         </div>
     </section>
 
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="py-24 bg-zinc-900">
+    <!-- About -->
+    <section id="about" class="py-24 bg-zinc-900">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="section-title text-4xl font-bold mb-8 mx-auto w-fit">Sobre mí</h2>
+            <h2 class="section-title text-4xl font-bold mb-8 mx-auto w-fit">About Me</h2>
             <p class="text-xl text-zinc-400 leading-relaxed max-w-2xl mx-auto">
-                Soy una desarrolladora backend con experiencia en la creación de arquitecturas escalables y seguras. 
-                Además de mi trabajo técnico, soy embajadora de Women Techmakers de Google, podcaster en CaminoDev, 
-                mentora y líder de comunidades tecnológicas en Medellín.
+                I am a backend developer with experience building scalable and secure architectures. 
+                In addition to my technical work, I am a Google Women Techmakers Ambassador, podcaster at CaminoDev, 
+                mentor, and tech community leader in Medellín.
             </p>
             <div class="mt-12 flex justify-center gap-8 text-sm">
                 <div>
                     <div class="text-emerald-400 font-mono text-4xl font-bold">6+</div>
-                    <div class="text-zinc-500">Años de experiencia</div>
+                    <div class="text-zinc-500">Years of experience</div>
                 </div>
                 <div>
                     <div class="text-emerald-400 font-mono text-4xl font-bold">10+</div>
-                    <div class="text-zinc-500">Proyectos destacados</div>
+                    <div class="text-zinc-500">Featured projects</div>
                 </div>
                 <div>
                     <div class="text-emerald-400 font-mono text-4xl font-bold">5</div>
-                    <div class="text-zinc-500">Comunidades lideradas</div>
+                    <div class="text-zinc-500">Communities led</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Creación de Contenido - CON LIVE STATUS -->
-    <section id="contenido" class="py-24 bg-zinc-900">
-    <div class="max-w-6xl mx-auto px-6">
-        <h2 class="section-title text-4xl font-bold mb-12">Creación de Contenido</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <!-- Content Creation -->
+    <section id="content" class="py-24 bg-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="section-title text-4xl font-bold mb-12">Content Creation</h2>
             
-            <!-- CaminoDev -->
-            <div class="bg-zinc-800 rounded-3xl p-8 card-hover transition-all">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center text-3xl">🎙️</div>
-                    <div>
-                        <h3 class="text-2xl font-semibold">CaminoDev</h3>
-                        <p class="text-emerald-400">Podcast Tech</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- CaminoDev -->
+                <div class="bg-zinc-800 rounded-3xl p-8 card-hover transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center text-3xl">🎙️</div>
+                        <div>
+                            <h3 class="text-2xl font-semibold">CaminoDev</h3>
+                            <p class="text-emerald-400">Tech Podcast</p>
+                        </div>
                     </div>
-                </div>
-                <p class="text-zinc-400 mb-6">Podcast sobre desarrollo de software, carrera tech y comunidades.</p>
-                <a href="https://www.youtube.com/@CaminoDev" target="_blank" 
-                   class="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-2">
-                    <i class="fab fa-youtube"></i> Ver Canal
-                </a>
-            </div>
-
-            <!-- RyukPlay -->
-            <div class="bg-zinc-800 rounded-3xl p-8 card-hover transition-all relative" id="ryukplay-card">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center text-3xl">🎮</div>
-                    <div>
-                        <h3 class="text-2xl font-semibold">RyukPlay</h3>
-                        <p class="text-emerald-400">Gaming &amp; Streaming</p>
-                    </div>
-                </div>
-
-                <!-- Badges de Live -->
-                <div class="mb-6 flex flex-wrap gap-3" id="live-badges">
-                    <!-- script automatic -->
-                </div>
-
-                <p class="text-zinc-400 mb-6">Contenido de videojuegos y streams en vivo.</p>
-
-                <!-- Plataformas -->
-                <div class="flex flex-wrap gap-5 text-3xl">
-                    <a href="https://www.twitch.tv/ryukdeathnotetv" target="_blank" class="text-purple-400 hover:text-purple-300" title="Twitch">
-                        <i class="fab fa-twitch"></i>
-                    </a>
-                    <a href="https://kick.com/ryukdeathnotetv" target="_blank" class="text-green-400 hover:text-green-300" title="Kick">
-                        <i class="fas fa-gamepad"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@ryukdeathnotetv" target="_blank" class="text-pink-400 hover:text-pink-300" title="TikTok">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@ryukdeathnotetv" target="_blank" class="text-red-400 hover:text-red-300" title="YouTube">
+                    <p class="text-zinc-400 mb-6">Podcast about software development, tech careers and communities.</p>
+                    <a href="https://www.youtube.com/@CaminoDev" target="_blank" class="text-red-400 hover:text-red-300 transition-colors text-3xl">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
+
+                <!-- RyukPlay -->
+                <div class="bg-zinc-800 rounded-3xl p-8 card-hover transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center text-3xl">🎮</div>
+                        <div>
+                            <h3 class="text-2xl font-semibold">RyukPlay</h3>
+                            <p class="text-emerald-400">Gaming &amp; Streaming</p>
+                        </div>
+                    </div>
+
+                    <!-- Badges de Live -->
+                    <div class="mb-6 flex flex-wrap gap-3" id="live-badges">
+                        <!-- script automatic -->
+                    </div>
+
+                    <p class="text-zinc-400 mb-6">Gaming content and live streaming.</p>
+                    
+                    <div class="flex flex-wrap gap-5 text-3xl">
+                        <a href="https://www.twitch.tv/ryukdeathnotetv" target="_blank" class="text-purple-400 hover:text-purple-300"><i class="fab fa-twitch"></i></a>
+                        <a href="https://kick.com/ryukdeathnotetv" target="_blank" class="text-green-400 hover:text-green-300"><i class="fas fa-gamepad"></i></a>
+                        <a href="https://www.tiktok.com/@ryukdeathnotetv" target="_blank" class="text-pink-400 hover:text-pink-300"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@ryukdeathnotetv" target="_blank" class="text-red-400 hover:text-red-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="py-24">
+    <!-- Contact -->
+    <section id="contact" class="py-24">
         <div class="max-w-6xl mx-auto px-6">
             <div class="bg-zinc-900 rounded-3xl p-12 text-center">
-                <h2 class="text-4xl font-bold mb-4">¿Hablemos?</h2>
-                <p class="text-zinc-400 mb-8">Estoy abierta a nuevas oportunidades y colaboraciones.</p>
+                <h2 class="text-4xl font-bold mb-4">Let's talk?</h2>
+                <p class="text-zinc-400 mb-8">I'm open to new opportunities and collaborations.</p>
                 
-                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-                    <a href="mailto:codellinamaria@gmail.com" 
-                       class="px-10 py-5 border bg-emerald-500 hover:bg-emerald-600 text-zinc-900 font-semibold rounded-2xl transition-all flex items-center justify-center gap-3">
-                        <i class="fas fa-envelope"></i>
-                        Enviar correo
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="mailto:codellinamaria@gmail.com" class="px-10 py-5 bg-emerald-500 hover:bg-emerald-600 text-zinc-900 font-semibold rounded-2xl transition-all flex items-center justify-center gap-3">
+                        <i class="fas fa-envelope"></i> Send Email
                     </a>
-                    <a href="https://linkedin.com/in/calypsobronte" target="_blank"
-                       class="px-10 py-5 border border-zinc-700 hover:bg-zinc-800 font-semibold rounded-2xl transition-all flex items-center justify-center gap-3">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
+                    <a href="https://linkedin.com/in/calypsobronte" target="_blank" class="px-10 py-5 border border-zinc-700 hover:bg-zinc-800 font-semibold rounded-2xl transition-all flex items-center justify-center gap-3">
+                        <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
-                    <a href="cv/Lina_Montano_CV.pdf" download="Lina_Montano_CV.pdf"
-                        class="px-10 py-5 border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-zinc-900 font-semibold rounded-2xl transition-all flex items-center justify-center gap-3">
-                        <i class="fas fa-download"></i>
-                        Descargar CV
+                    <a href="cv/Lina_Montano_CV_en.pdf" download="Lina_Montano_CV_en.pdf" class="px-10 py-5 border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-zinc-900 font-semibold rounded-2xl transition-all flex items-center justify-center gap-3">
+                        <i class="fas fa-download"></i> Download CV
                     </a>
                 </div>
                 
@@ -477,47 +436,31 @@
     <footer class="py-8 md:py-10 border-t border-zinc-800">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-
                 <p class="text-zinc-500 text-sm md:text-base">
-                    © 2026 Lina María Montaño Ramírez • Hecho con pasión por el código y el contenido
+                    © 2026 Lina María Montaño Ramírez • Made with passion for code and content
                 </p>
-
                 <div class="flex justify-center gap-6 text-xl">
-                    <a href="https://github.com/calypsobronte" target="_blank" class="text-zinc-400 hover:text-emerald-400 transition-colors">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/calypsobronte" target="_blank" class="text-zinc-400 hover:text-emerald-400 transition-colors">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@ryukdeathnotetv" target="_blank" class="text-zinc-400 hover:text-emerald-400 transition-colors">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+                    <a href="https://github.com/calypsobronte" target="_blank" class="text-zinc-400 hover:text-emerald-400"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/calypsobronte" target="_blank" class="text-zinc-400 hover:text-emerald-400"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@ryukdeathnotetv" target="_blank" class="text-zinc-400 hover:text-emerald-400"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // === HAMBURGER MENU ===
+        // Hamburger Menu
         const hamburgerBtn = document.getElementById('hamburger-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
 
         hamburgerBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-            
-            // Cambiar icono
             const icon = hamburgerBtn.querySelector('i');
-            if (mobileMenu.classList.contains('hidden')) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            } else {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            }
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
         });
 
-        // Cerrar menú al hacer clic en un enlace
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
@@ -537,6 +480,7 @@
             }
         }
 
+        // Twitch Live Status
         // === DETECCIÓN DE LIVE ===
         async function checkLiveStatus() {
             const liveContainer = document.getElementById('live-badges');
@@ -563,7 +507,7 @@
                         <a href="https://www.twitch.tv/${username}" target="_blank" 
                         class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 px-5 py-2 rounded-full text-white font-semibold live-badge text-sm">
                             <span class="w-2.5 h-2.5 bg-white rounded-full animate-pulse"></span>
-                            EN VIVO en Twitch
+                            LIVE on Twitch
                         </a>
                     `;
                     console.log("✅ Twitch está en vivo");
@@ -584,7 +528,7 @@
                         <a href="https://kick.com/${username}" target="_blank" 
                         class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 px-5 py-2 rounded-full text-white font-semibold live-badge text-sm">
                             <span class="w-2.5 h-2.5 bg-white rounded-full animate-pulse"></span>
-                            EN VIVO en Kick
+                            LIVE on Kick
                         </a>
                     `;
                     console.log("✅ Kick está en vivo");
@@ -595,7 +539,7 @@
         }
 
         window.onload = checkLiveStatus;
-        console.log("%c¡Gracias por visitar mi portafolio! 🚀", "color: #22c55e; font-size: 14px;");
+        console.log("%c¡Thank you for visiting my portfolio! 🚀", "color: #22c55e; font-size: 14px;");
     </script>
 </body>
 </html>
