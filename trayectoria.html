@@ -10,6 +10,9 @@
 <meta name="keywords" content="Portafolio, Backend Developer, Lina Montaño, MercadoLibre, Sinapsis, BID, Blockchain, LACChain, Machine Learning, Gobierno digital, Colombia">
 <meta name="author" content="Lina María Montaño Ramírez">
 <link rel="canonical" href="https://ryukplay.dev/trayectoria.html">
+<link rel="alternate" hreflang="es" href="https://ryukplay.dev/trayectoria.html">
+<link rel="alternate" hreflang="en" href="https://ryukplay.dev/trayectoria-en.html">
+<link rel="alternate" hreflang="x-default" href="https://ryukplay.dev/trayectoria.html">
 
 <!-- ==================== FAVICONS ==================== -->
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -56,16 +59,20 @@
 <!-- ==================== NAVBAR ==================== -->
 <nav class="fixed top-0 w-full bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800 z-50">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="index.html" class="flex items-center gap-3 min-w-0 group">
+    <a href="https://ryukplay.dev/" class="flex items-center gap-3 min-w-0 group">
       <img src="images/logo-ryuk.png" alt="Ryuk Logo" class="w-9 h-9 flex-shrink-0">
       <span class="font-semibold text-xl whitespace-nowrap group-hover:text-emerald-400 transition-colors">Lina Montaño</span>
     </a>
     <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-      <a href="index.html#experiencia" class="hover:text-emerald-400 transition-colors">Experiencia</a>
-      <a href="index.html#habilidades" class="hover:text-emerald-400 transition-colors">Habilidades</a>
-      <a href="index.html#contenido" class="hover:text-emerald-400 transition-colors">Contenido</a>
-      <a href="index.html#sobre-mi" class="hover:text-emerald-400 transition-colors">Sobre mí</a>
-      <a href="index.html#contacto" class="flex items-center gap-2 px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 transition-colors rounded-full text-sm font-semibold text-white">
+<div class="hidden lg:flex items-center gap-1 text-sm border border-zinc-800 rounded-full px-1 py-1">
+        <span class="px-3 py-1 rounded-full bg-emerald-500 text-white font-semibold text-xs">ES</span>
+        <a href="trayectoria-en.html" class="px-3 py-1 rounded-full text-zinc-400 hover:text-white transition-colors text-xs">EN</a>
+      </div>
+      <a href="https://ryukplay.dev/#experiencia" class="hover:text-emerald-400 transition-colors">Experiencia</a>
+      <a href="https://ryukplay.dev/#habilidades" class="hover:text-emerald-400 transition-colors">Habilidades</a>
+      <a href="https://ryukplay.dev/#contenido" class="hover:text-emerald-400 transition-colors">Contenido</a>
+      <a href="https://ryukplay.dev/#sobre-mi" class="hover:text-emerald-400 transition-colors">Sobre mí</a>
+      <a href="https://ryukplay.dev/#contacto" class="flex items-center gap-2 px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 transition-colors rounded-full text-sm font-semibold text-white">
         <i class="fas fa-paper-plane"></i> Contactar
       </a>
     </div>
@@ -77,12 +84,16 @@
   </div>
   <div id="mobile-menu" class="hidden lg:hidden bg-zinc-900 border-t border-zinc-800">
     <div class="px-6 py-6 flex flex-col gap-4 text-sm font-medium">
-      <a href="index.html#experiencia" class="mobile-link py-2 hover:text-emerald-400">Experiencia</a>
-      <a href="index.html#habilidades" class="mobile-link py-2 hover:text-emerald-400">Habilidades</a>
-      <a href="index.html#contenido" class="mobile-link py-2 hover:text-emerald-400">Contenido</a>
-      <a href="index.html#sobre-mi" class="mobile-link py-2 hover:text-emerald-400">Sobre mí</a>
-      <div class="pt-4 border-t border-zinc-700">
-        <a href="index.html#contacto" class="flex items-center justify-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-full text-white font-semibold">
+      <a href="https://ryukplay.dev/#experiencia" class="mobile-link py-2 hover:text-emerald-400">Experiencia</a>
+      <a href="https://ryukplay.dev/#habilidades" class="mobile-link py-2 hover:text-emerald-400">Habilidades</a>
+      <a href="https://ryukplay.dev/#contenido" class="mobile-link py-2 hover:text-emerald-400">Contenido</a>
+      <a href="https://ryukplay.dev/#sobre-mi" class="mobile-link py-2 hover:text-emerald-400">Sobre mí</a>
+<div class="pt-4 border-t border-zinc-700 flex items-center gap-2">
+          <span class="px-4 py-2 rounded-full bg-emerald-500 text-white font-semibold text-xs">ES</span>
+          <a href="trayectoria-en.html" class="px-4 py-2 rounded-full border border-zinc-700 text-zinc-400 text-xs">EN</a>
+        </div>
+        <div class="pt-4 border-t border-zinc-700">
+        <a href="https://ryukplay.dev/#contacto" class="flex items-center justify-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-full text-white font-semibold">
           <i class="fas fa-paper-plane"></i> Contactar
         </a>
       </div>
@@ -1092,58 +1103,58 @@
 <script data-goatcounter="https://ryukplay.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 <script>
-// === HAMBURGER MENU ===
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const mobileLinks = document.querySelectorAll('.mobile-link');
-
-hamburgerBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-  const icon = hamburgerBtn.querySelector('i');
-  if (mobileMenu.classList.contains('hidden')) {
-    icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
-  } else {
-    icon.classList.remove('fa-bars'); icon.classList.add('fa-times');
-  }
-});
-
-mobileLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');
+  // === HAMBURGER MENU ===
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+  
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
     const icon = hamburgerBtn.querySelector('i');
-    icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
+    if (mobileMenu.classList.contains('hidden')) {
+      icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
+    } else {
+      icon.classList.remove('fa-bars'); icon.classList.add('fa-times');
+    }
   });
-});
-
-// === FILTRO POR CATEGORÍA ===
-(function(){
-  const chips = Array.from(document.querySelectorAll('.chip'));
-  const eras  = Array.from(document.querySelectorAll('.era'));
-
-  const ON  = ['bg-emerald-500','text-white','font-semibold'];
-  const OFF = ['bg-zinc-800','text-zinc-400','hover:text-white'];
-
-  chips.forEach(chip => {
-    chip.addEventListener('click', () => {
-      const target = chip.dataset.f;
-
-      chips.forEach(c => {
-        const active = (c === chip);
-        c.setAttribute('aria-pressed', String(active));
-        c.classList.remove(...ON, ...OFF);
-        c.classList.add(...(active ? ON : OFF));
-      });
-
-      eras.forEach(era => {
-        era.classList.toggle('hidden', !(target === 'all' || era.dataset.cat === target));
-      });
-
-      window.scrollTo({ top: document.querySelector('main').offsetTop - 140, behavior: 'smooth' });
+  
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      const icon = hamburgerBtn.querySelector('i');
+      icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
     });
   });
-})();
-
-console.log("%c¡Gracias por visitar mi portafolio! 🚀", "color: #22c55e; font-size: 14px;");
+  
+  // === FILTRO POR CATEGORÍA ===
+  (function(){
+    const chips = Array.from(document.querySelectorAll('.chip'));
+    const eras  = Array.from(document.querySelectorAll('.era'));
+  
+    const ON  = ['bg-emerald-500','text-white','font-semibold'];
+    const OFF = ['bg-zinc-800','text-zinc-400','hover:text-white'];
+  
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const target = chip.dataset.f;
+  
+        chips.forEach(c => {
+          const active = (c === chip);
+          c.setAttribute('aria-pressed', String(active));
+          c.classList.remove(...ON, ...OFF);
+          c.classList.add(...(active ? ON : OFF));
+        });
+  
+        eras.forEach(era => {
+          era.classList.toggle('hidden', !(target === 'all' || era.dataset.cat === target));
+        });
+  
+        window.scrollTo({ top: document.querySelector('main').offsetTop - 140, behavior: 'smooth' });
+      });
+    });
+  })();
+  
+  console.log("%c¡Gracias por visitar mi portafolio! 🚀", "color: #22c55e; font-size: 14px;");
 </script>
 
 </body>
